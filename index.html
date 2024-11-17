@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Fellas</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="icon" href="imagenes\twofellas.jpeg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Barra de navegación y logo -->
+    <header class="navegacion">
+        <div class="logo">
+            <img src="imagenes/twofellas.jpeg" alt="Two Fellas">
+            <h1>Two Fellas</h1>
+        </div>
+        <nav>
+            <ul class="barra">
+                <li><a href="#ubicacion"><i class="fa-solid fa-location-dot fa-beat"></i>Ubicación</a></li>
+                <li><a href="#nuestras"><i class="fa-solid fa-burger fa-beat"></i>Hamburguesas</a></li>
+                <li><a href="#contacto"><i class="fa-solid fa-address-book fa-beat"></i>Contacto</a></li>
+                <li><a href="#pie"><i class="fa-solid fa-person fa-beat"></i>Conócenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner principal -->
+    <section class="banner">
+        <img src="imagenes/baner.png" alt="Banner">
+    </section>
+
+    <!-- Descripción de hamburguesería -->
+    <section class="descripcion">
+        <div class="imagen1">
+            <img src="imagenes/hamburguesa1.jpg" alt="Hamburguesa especial">
+        </div>
+        <div class="texto1">
+            <h2>Tu hamburguesería en Two Fellas</h2>
+            <p>
+                En Hamburguesería Two Fellas, cada producto es especial, con un estilo único, dedicación y calidad.
+                Ven a probar nuestra carta o pide para llevar. Te aseguramos que seremos tu hamburguesería favorita.
+            </p>
+            <a href="#" class="boton">Descubre más</a>
+        </div>
+    </section>
+
+    <!-- Sección de hamburguesas destacadas -->
+    <section id="nuestras">
+        <h2>Nuestras mejores hamburguesas</h2>
+        <div class="hamburguesas-grid">
+            <div class="hamburguesa-item">
+                <h3>Hamburguesa BBQ</h3>
+                <p>Deliciosa BBQ con carne ahumada y toque de salsa especial.</p>
+                <img src="imagenes/hamburguesa_bbq.jpg" alt="Hamburguesa BBQ">
+            </div>
+            <div class="hamburguesa-item">
+                <h3>Hamburguesa Clásica</h3>
+                <p>Una opción clásica que nunca pasa de moda.</p>
+                <img src="imagenes/hamburguesa_clasica.jpg" alt="Hamburguesa Clásica">
+            </div>
+            <div class="hamburguesa-item">
+                <h3>Hamburguesa Doble</h3>
+                <p>Para los más valientes, ¡doble carne y doble sabor!</p>
+                <img src="imagenes/hamburguesa_doble.jpg" alt="Hamburguesa Doble">
+            </div>
+            <div class="hamburguesa-item">
+                <h3>Hamburguesa Vegetariana</h3>
+                <p>Una opción saludable sin perder el sabor.</p>
+                <img src="imagenes/hamburguesa_veg.jpg" alt="Hamburguesa Vegetariana">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de ubicación y contacto -->
+    <section id="ubicacion">
+        <h3>Ubicación</h3>
+        <p>Estamos ubicados en el centro de la ciudad, ¡ven a visitarnos!</p>
+        <img src="imagenes/ubicacion.jpeg" alt="Mapa de ubicación">
+        <div id="contacto">
+            <h3>Contacto</h3>
+            <p>WhatsApp: 963258741</p>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div id="pie">
+            
+            <div class="columna">
+                <h3>Redes Sociales</h3>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">Facebook</a>
+            </div>
+            <div class="columna">
+                <h3>Mi Cuenta</h3>
+                <a href="#">Iniciar sesión</a>
+                <a href="#">Registrarse</a>
+            </div>
+        </div>
+    </footer>
+
+<script>
+         document.querySelectorAll('.barra a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+</script>
+
+</body>
+
+</html>
